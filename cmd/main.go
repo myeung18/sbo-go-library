@@ -2,13 +2,13 @@ package main
 
 import (
 	"fmt"
-	"github.com/myeung18/service-binding-client/pkg/binding/convert"
+	"github.com/RHEcosystemAppEng/sbo-go-library/pkg/binding/convert"
 )
 
 func main() {
 	connString, err := convert.GetMongoDBConnectionString()
 	if err != nil {
-		panic(err)
+		fmt.Println(err)
 	}
 	fmt.Println(connString)
 	connString, err = convert.GetPostgreSQLConnectionString()

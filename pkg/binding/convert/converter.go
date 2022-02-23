@@ -2,7 +2,7 @@ package convert
 
 import (
 	"fmt"
-	"github.com/myeung18/service-binding-client/internal/fileconfig"
+	"github.com/RHEcosystemAppEng/sbo-go-library/internal/fileconfig"
 )
 
 const (
@@ -26,6 +26,11 @@ const (
 	mongodb = "mongodb"
 	// postgresql
 	postgreSql = "postgresql"
+
+	// keySslMode ssl mode to connect to database
+	keySslMode = "sslmode"
+	// keySslRootCert name of CA Certificate
+	keySslRootCert = "sslrootcert"
 )
 
 // Converter converts and returns a ServiceBinding object to a DSN connection string
@@ -40,7 +45,7 @@ func GetPostgreSQLConnectionString() (string, error) {
 	if err != nil {
 		return "", err
 	}
-	converter := &PostgreSQLConnectionStringConverter{}
+	converter := &PostgreSQLUrlConverter{}
 	return converter.Convert(dbBinding), nil
 }
 

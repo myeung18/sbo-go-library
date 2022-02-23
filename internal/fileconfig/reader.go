@@ -61,6 +61,7 @@ func (bfr *BindingFileReader) ReadServiceBindingConfig() ([]ServiceBinding, erro
 				Provider:    provider,
 				Properties:  content,
 				BindingType: bindingType,
+				BindingName: dir.Name(),
 			})
 		}
 	}
