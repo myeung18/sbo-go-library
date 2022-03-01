@@ -1,7 +1,7 @@
 package convert
 
 import (
-	"github.com/myeung18/service-binding-client/internal/fileconfig"
+	"github.com/RHEcosystemAppEng/sbo-go-library/internal/fileconfig"
 	"testing"
 )
 

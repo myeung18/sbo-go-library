@@ -6,4 +6,5 @@ type ServiceBinding struct {
 	Provider    string
 	Properties  map[string]string
 	BindingType string
+	BindingName string
 }

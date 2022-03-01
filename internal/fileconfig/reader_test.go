@@ -112,6 +112,7 @@ func TestBindingFileReader_ReadServiceBindingConfig(t *testing.T) {
 						"username": "/bindings/local/username",
 						"password": "/bindings/local/password",
 					},
+					BindingName: "local",
 				},
 			},
 			wantErr: false,
