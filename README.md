@@ -61,3 +61,4 @@ SERVICE_BINDING_ROOT=bindings go run ./cmd/<main.go>
 * [CockroachDB Cloud Sample Application](https://github.com/myeung18/cockroachdb-go-quickstart)
 * [Service Binding Specification](https://github.com/k8s-service-bindings/spec)
 
+dafsdjflkadsjflsdk
